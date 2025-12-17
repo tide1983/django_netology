@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная страница</title>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <h2>Доступные страницы:</h2>
+    <ul>
+        {% for name, url in pages.items %}
+            <li><a href="{{ url }}">{{ name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
